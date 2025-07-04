@@ -8,12 +8,16 @@ RUN apt install git curl python3-pip ffmpeg -y
 COPY requirements.txt /requirements.txt
 
 # Installing Requirements
-RUN cd /
 RUN pip3 install --upgrade pip
-RUN pip3 install -U -r requirements.txt
+RUN pip3 install -U -r /requirements.txt
+
+# Creating Working Directory
 RUN mkdir /MusicPlayer
 WORKDIR /MusicPlayer
+
+# Copying Startup Script
 COPY startup.sh /startup.sh
+RUN chmod +x /startup.sh
 
 # Running Music Player Bot
-CMD ["/bash", "/startup.sh"]
+CMD ["/bin/bash", "/startup.sh"]
