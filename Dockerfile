@@ -16,4 +16,4 @@ WORKDIR /MusicPlayer
 COPY startup.sh /startup.sh
 
 # Running Music Player Bot
-CMD ["/bin/bash", "/startup.sh"]
+CMD ["/bash", "/startup.sh"]
