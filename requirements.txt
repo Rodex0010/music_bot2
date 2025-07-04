@@ -1,0 +1,11 @@
+pytube
+pillow
+spotipy
+aiohttp
+aiofiles
+pyrogram
+tgcrypto
+python-dotenv
+py-tgcalls==2.2.5
+youtube-search-python
+git+https://github.com/asmsafone/downloader
