@@ -5,7 +5,8 @@ from core.song import Song
 from pyrogram import Client
 from yt_dlp import YoutubeDL
 from core.funcs import generate_cover
-from pytgcalls import PyTgCalls, StreamType
+from pytgcalls import PyTgCalls
+from pytgcalls.types import StreamType
 from core.groups import get_group, set_title
 from pyrogram.raw.types import InputPeerChannel
 from pyrogram.raw.functions.phone import CreateGroupCall
